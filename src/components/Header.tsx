@@ -33,7 +33,7 @@ const Header = () => {
               <div className="absolute -top-1 -right-1 w-3 h-3 bg-teal-500 rounded-full animate-pulse"></div>
             </div>
             <h1 className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-teal-500 bg-clip-text text-transparent">
-              AUTOFY
+              AUTOPHY
             </h1>
           </div>
 
