@@ -31,7 +31,7 @@ const Hero = () => {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-indigo-600 via-purple-600 to-teal-500 bg-clip-text text-transparent leading-tight">
-            AUTOFY
+            AUTOPHY
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-600 mb-4 font-light">
