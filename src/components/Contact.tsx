@@ -72,7 +72,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300"
-                    placeholder="your.email@company.com"
+                    placeholder="autophy.work@gmail.com"
                     required
                   />
                 </div>
