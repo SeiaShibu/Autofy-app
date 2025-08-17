@@ -26,7 +26,6 @@ const About = () => {
   ];
 
   const benefits = [
-    'Reduce operational costs by up to 60%',
     'Increase productivity and efficiency',
     'Eliminate human errors in repetitive tasks',
     'Scale operations without additional workforce',
@@ -41,7 +40,7 @@ const About = () => {
           {/* Left Side - Content */}
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-              Why Choose <span className="bg-gradient-to-r from-indigo-600 to-teal-500 bg-clip-text text-transparent">AUTOFY</span>?
+              Why Choose <span className="bg-gradient-to-r from-indigo-600 to-teal-500 bg-clip-text text-transparent">AUTOPHY</span>?
             </h2>
             
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">

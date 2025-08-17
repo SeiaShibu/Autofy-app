@@ -72,7 +72,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300"
-                    placeholder="autophy.work@gmail.com"
+                    placeholder="Enter your email"
                     required
                   />
                 </div>
@@ -141,8 +141,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Email Us</h4>
-                    <p className="text-gray-600">hello@autofy.com</p>
-                    <p className="text-gray-600">support@autofy.com</p>
+                    <p className="text-gray-600">autophy.work@gmail.com</p>
                   </div>
                 </div>
 
@@ -152,8 +151,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Call Us</h4>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
-                    <p className="text-gray-600">Mon-Fri 9AM-6PM EST</p>
+                    <p className="text-gray-600">+91 8277433034</p>
+                    <p className="text-gray-600">+91 6238132261</p>
                   </div>
                 </div>
 
@@ -182,27 +181,7 @@ const Contact = () => {
             </div>
 
             {/* Quick Stats */}
-            <div className="bg-gradient-to-r from-indigo-600 to-teal-500 rounded-3xl p-8 text-white">
-              <h3 className="text-2xl font-bold mb-6">Why Businesses Choose Us</h3>
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center">
-                  <div className="text-3xl font-bold mb-2">24hrs</div>
-                  <div className="text-indigo-100">Response Time</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold mb-2">95%</div>
-                  <div className="text-indigo-100">Client Satisfaction</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold mb-2">60%</div>
-                  <div className="text-indigo-100">Cost Reduction</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold mb-2">500+</div>
-                  <div className="text-indigo-100">Projects Completed</div>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>

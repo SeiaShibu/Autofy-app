@@ -25,7 +25,7 @@ const Footer = () => {
                 <div className="absolute -top-1 -right-1 w-3 h-3 bg-teal-400 rounded-full animate-pulse"></div>
               </div>
               <h3 className="text-2xl font-bold bg-gradient-to-r from-indigo-400 to-teal-400 bg-clip-text text-transparent">
-                AUTOFY
+                AUTOPHY
               </h3>
             </div>
             <p className="text-gray-400 leading-relaxed mb-6">
@@ -52,7 +52,7 @@ const Footer = () => {
             <ul className="space-y-3">
               {[
                 'Workflow Automation',
-                'Process Automation (RPA)',
+                'Process Automation',
                 'AI Chatbots',
                 'Data Analytics',
                 'Document Automation',
@@ -100,11 +100,12 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-indigo-400" />
-                <span className="text-gray-400">hello@autofy.com</span>
+                <span className="text-gray-400">autophy.work@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-indigo-400" />
-                <span className="text-gray-400">+1 (555) 123-4567</span>
+                <span className="text-gray-400">+91 8277433034</span><br/>
+                <span className="text-gray-400">+91 6238132261</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-indigo-400" />
@@ -124,7 +125,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2024 AUTOFY. All rights reserved. Built with precision and care.
+            © 2024 AUTOPHY. All rights reserved. Built with precision and care.
           </p>
           
           <div className="flex items-center space-x-6 mt-4 md:mt-0">
