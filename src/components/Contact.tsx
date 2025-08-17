@@ -21,7 +21,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch('http://localhost:5000/send', { // backend endpoint
+      const res = await fetch('https://autofy-app.onrender.com/send', { // backend endpoint
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
