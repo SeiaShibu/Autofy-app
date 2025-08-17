@@ -10,6 +10,8 @@ const Contact = () => {
     message: ''
   });
 
+  const [statusMsg, setStatusMsg] = useState<string | null>(null); // New state for UI messages
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
       ...formData,
@@ -19,33 +21,26 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setStatusMsg(null); // Reset previous message
 
     try {
-      const res = await fetch('https://autofy-app.onrender.com/send', { // backend endpoint
+      const res = await fetch('https://autofy-app.onrender.com/send', { // Your deployed backend
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
       });
 
       const data = await res.json();
 
       if (data.success) {
-        alert('✅ Message sent! We will contact you soon.');
-        setFormData({
-          name: '',
-          email: '',
-          company: '',
-          service: '',
-          message: ''
-        });
+        setStatusMsg('✅ Message sent! We will contact you soon.');
+        setFormData({ name: '', email: '', company: '', service: '', message: '' });
       } else {
-        alert('❌ Something went wrong. Please try again.');
+        setStatusMsg('❌ Something went wrong. Please try again.');
       }
     } catch (error) {
       console.error('Error sending message:', error);
-      alert('❌ Something went wrong. Please try again.');
+      setStatusMsg('❌ Something went wrong. Please try again.');
     }
   };
 
@@ -152,6 +147,13 @@ const Contact = () => {
                 Get Free Quote
                 <Send className="w-5 h-5" />
               </button>
+
+              {/* Status message */}
+              {statusMsg && (
+                <p className={`mt-4 text-center font-semibold ${statusMsg.startsWith('✅') ? 'text-green-600' : 'text-red-600'}`}>
+                  {statusMsg}
+                </p>
+              )}
             </form>
           </div>
 
@@ -206,6 +208,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
