@@ -29,12 +29,13 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2 cursor-pointer" onClick={() => scrollToSection('hero')}>
             <div className="relative">
-              <Bot className="w-8 h-8 text-indigo-600" />
-              <div className="absolute -top-1 -right-1 w-3 h-3 bg-teal-500 rounded-full animate-pulse"></div>
-            </div>
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-teal-500 bg-clip-text text-transparent">
-              AUTOPHY
-            </h1>
+  <img src="/logo.png" alt="My Logo" className="w-8 h-8 object-contain" />
+  <div className="absolute -top-1 -right-1 w-3 h-3 bg-teal-500 rounded-full animate-pulse"></div>
+</div>
+<h1 className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-teal-500 bg-clip-text text-transparent">
+  AUTOPHY
+</h1>
+
           </div>
 
           <nav className="hidden md:flex items-center space-x-8">

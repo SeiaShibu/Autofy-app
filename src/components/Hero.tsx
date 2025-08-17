@@ -19,16 +19,17 @@ const Hero = () => {
       <div className="container mx-auto px-6 py-20 text-center">
         <div className="max-w-4xl mx-auto">
           {/* 3D Logo Animation */}
-          <div className="mb-8 flex justify-center">
-            <div className="relative transform hover:scale-110 transition-all duration-500">
-              <div className="w-24 h-24 bg-gradient-to-r from-indigo-600 to-teal-500 rounded-2xl flex items-center justify-center shadow-2xl transform rotate-12 hover:rotate-0 transition-all duration-500">
-                <Bot className="w-12 h-12 text-white" />
-              </div>
-              <div className="absolute -top-2 -right-2 w-6 h-6 bg-orange-400 rounded-full flex items-center justify-center">
-                <Zap className="w-4 h-4 text-white" />
-              </div>
-            </div>
-          </div>
+<div className="mb-8 flex justify-center">
+  <div className="relative transform hover:scale-110 transition-all duration-500">
+    <div className="w-24 h-24 bg-gradient-to-r from-indigo-600 to-teal-500 rounded-2xl flex items-center justify-center shadow-2xl transform rotate-12 hover:rotate-0 transition-all duration-500">
+      <img src="/logo.png" alt="My Logo" className="w-12 h-12 object-contain" />
+    </div>
+    <div className="absolute -top-2 -right-2 w-6 h-6 bg-orange-400 rounded-full flex items-center justify-center">
+      <Zap className="w-4 h-4 text-white" />
+    </div>
+  </div>
+</div>
+
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-indigo-600 via-purple-600 to-teal-500 bg-clip-text text-transparent leading-tight">
             AUTOPHY

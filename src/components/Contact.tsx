@@ -17,10 +17,36 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
+
+    try {
+      const res = await fetch('http://localhost:5000/send', { // backend endpoint
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        alert('✅ Message sent! We will contact you soon.');
+        setFormData({
+          name: '',
+          email: '',
+          company: '',
+          service: '',
+          message: ''
+        });
+      } else {
+        alert('❌ Something went wrong. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error sending message:', error);
+      alert('❌ Something went wrong. Please try again.');
+    }
   };
 
   const services = [
@@ -179,9 +205,6 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-
-            {/* Quick Stats */}
-            
           </div>
         </div>
       </div>
