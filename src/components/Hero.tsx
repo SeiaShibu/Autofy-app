@@ -65,19 +65,7 @@ const Hero = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
-            {[
-              { number: '500+', label: 'Tasks Automated', icon: <Workflow className="w-6 h-6" /> },
-              { number: '150+', label: 'Happy Clients', icon: <Bot className="w-6 h-6" /> },
-              { number: '95%', label: 'Efficiency Boost', icon: <Zap className="w-6 h-6" /> }
-            ].map((stat, index) => (
-              <div key={index} className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                <div className="text-indigo-600 mb-2 flex justify-center">{stat.icon}</div>
-                <div className="text-3xl font-bold text-gray-800 mb-1">{stat.number}</div>
-                <div className="text-gray-600 font-medium">{stat.label}</div>
-              </div>
-            ))}
-          </div>
+          
         </div>
       </div>
     </section>
